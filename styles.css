@@ -40,8 +40,6 @@ h1 {
     flex-wrap: wrap; /* Allow the content to wrap to the next line on small screens */
 }
 
-
-
 .format-header h2 {
     font-size: 20px;
     margin: 0;
