@@ -57,7 +57,7 @@ h1 {
     height: 30px;
     cursor: pointer;
     font-size: 20px;
-    display: flex;
+    display: block; /* Make buttons take full width on mobile */
     justify-content: center;
     align-items: center;
 }
@@ -109,7 +109,7 @@ input[type="number"] {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    width: 80%; /* Make inputs take full width on mobile */
+    width: 70%; /* Make inputs take full width on mobile */
 }
 
 .formatName{
