@@ -109,7 +109,7 @@ input[type="number"] {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    width: 90%; /* Make inputs take full width on mobile */
+    width: 80%; /* Make inputs take full width on mobile */
 }
 
 .formatName{
@@ -153,6 +153,15 @@ input[type="number"]:focus {
 
 .add-format-button:hover, .add-row-button:hover {
     background: #1e8449;
+}
+
+.error-message{
+    color: #ff6b6b; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Spacing around the message */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
 }
 
 
