@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
     max-width: 800px;
+    max-width: 100%; /* Ensure it doesn't stretch on mobile */
 }
 
 h1 {
@@ -35,17 +37,15 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow the content to wrap to the next line on small screens */
 }
 
-.remove-row-button-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
+
 
 .format-header h2 {
     font-size: 20px;
     margin: 0;
+    flex: 1; /* Grow to take available space */
 }
 
 .add-row-button{
@@ -62,22 +62,6 @@ h1 {
     align-items: center;
 }
 
-.remove-row-button{
-   background: #e74c3c; /* Red color, you can adjust it */
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
 .add-format-button {
         background: #27ae60;
         color: white;
@@ -89,6 +73,8 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
+        display: block; /* Make buttons take full width on mobile */
+        margin: 10px 0; /* Add some margin between buttons */
 }
 
 .analyze-button {
@@ -103,6 +89,8 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    display: block; /* Make buttons take full width on mobile */
+    margin: 10px 0; /* Add some margin between buttons */
 }
 
 .format-rows {
@@ -121,6 +109,7 @@ input[type="number"] {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
+    width: 90%; /* Make inputs take full width on mobile */
 }
 
 .formatName{
