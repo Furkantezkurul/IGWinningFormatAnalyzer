@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -16,7 +15,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    max-width: 400px;
+    max-width: 800px;
 }
 
 h1 {
@@ -38,12 +37,18 @@ h1 {
     align-items: center;
 }
 
+.remove-row-button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
 .format-header h2 {
     font-size: 20px;
     margin: 0;
 }
 
-.add-row-button, .add-format-button {
+.add-row-button{
     background: #3498db;
     color: white;
     border: none;
@@ -55,6 +60,49 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.remove-row-button{
+   background: #e74c3c; /* Red color, you can adjust it */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.add-format-button {
+        background: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.analyze-button {
+    background: #7187fd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .format-rows {
@@ -75,6 +123,20 @@ input[type="number"] {
     text-align: center;
 }
 
+.formatName{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.formatName::placeholder{
+    font-weight: bold;
+}
+
+
+
 input[type="number"]::placeholder {
     text-align: center;
 }
@@ -91,7 +153,9 @@ input[type="number"]:focus {
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 12px;
+    margin-top: 10px;
+
 }
 
 .add-format-button:hover, .add-row-button:hover {

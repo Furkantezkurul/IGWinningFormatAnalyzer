@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram Format Analyzer</title>
+</head>
+<body>
+    <h1>Instagram Format Analyzer</h1>
+    <div class="container">
+        <div class="format">
+            <div class="format-header">
+                <input class="formatName" type="text" placeholder="Enter Format Name">
+                <button class="add-row-button">+</button>
+            </div>
+            <div class="format-rows">
+                <div class="row">
+                    <input type="number" placeholder="Reach">
+                    <input type="number" placeholder="Likes">
+                    <input type="number" placeholder="Comments">
+                    <input type="number" placeholder="Saves">
+                </div>
+            </div>
+        </div>
+        <button class="add-format-button">Add Posting Format</button>
+        <button class="analyze-button">Analyze Posts</button>
+        <div class="error-message"></div>
+        <canvas id="stats-chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
